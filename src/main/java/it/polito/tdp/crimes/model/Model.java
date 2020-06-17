@@ -62,6 +62,7 @@ public class Model {
 		for(DefaultWeightedEdge e : this.grafo.edgeSet()) {
 			if(this.grafo.getEdgeWeight(e)>pesoMedio) {
 				archi.add(new Arco(this.grafo.getEdgeSource(e), this.grafo.getEdgeTarget(e), this.grafo.getEdgeWeight(e))); 
+						//new Arco(this.grafo.getEdgeSource(e), this.grafo.getEdgeTarget(e), this.grafo.getEdgeWeight(e))); 
 			}
 		}
 		return archi;
