@@ -3,8 +3,8 @@ package it.polito.tdp.crimes.model;
 public class Arco implements Comparable<Arco>{
 	private String v1; 
 	private String v2;
-	private double peso;
-	public Arco(String v1, String v2, double d) {
+	private Integer peso;
+	public Arco(String v1, String v2, Integer d) {
 		super();
 		this.v1 = v1;
 		this.v2 = v2;
@@ -25,14 +25,14 @@ public class Arco implements Comparable<Arco>{
 	public double getPeso() {
 		return peso;
 	}
-	public void setPeso(double peso) {
+	public void setPeso(Integer peso) {
 		this.peso = peso;
 	}
 	@Override
 	public int compareTo(Arco o) {
 		//return o.getPeso().compareTo(this.peso); 
 	
-	return o.getPeso().compareTo(this.peso); 
+	return peso.compareTo(this.peso); 
 	}
 	@Override
 	public String toString() {
